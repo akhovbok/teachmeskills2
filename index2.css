@@ -1,0 +1,28 @@
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    background: #000;
+    height: 150px;
+    width: 33%;
+    border: 1px solid green;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px){
+    .first, .second{
+        width: 50%;
+    }
+    
+    .third{
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px){
+    .first, .second{
+        width: 100%;
+    }
+}
